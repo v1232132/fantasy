@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fantasy Haven Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap_theme/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/util.css">
+        <link rel="stylesheet" href="css/main.css">
+        <style>html, body { margin: 0; padding: 0; height: 100%; background-color: #fff; } /* Video Banner */.video-banner { position: relative; width: 100%; height: 300px; overflow: hidden; } .video-banner video { position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; object-fit: cover; z-index: 1; } .navbar-overlay { position: absolute; top: 0; width: 100%; z-index: 2; background: rgba(0, 0, 0, 0.5); } .navbar-overlay .navbar-nav .nav-link { color: #fff !important; } .navbar-overlay .navbar-brand { color: #fff !important; font-weight: bold; } /* Category Tabs */.category-tabs { background-color: #eee; padding: 20px 0; text-align: center; } .category-tabs button { background: none; border: none; color: black; font-size: 16px; margin: 0 15px; cursor: pointer; } .category-tabs .how-active1 { font-weight: bold; border-bottom: 2px solid black; } /* Footer */.bg3 { background-color: #1a1a1a !important; } footer { color: #fff; padding: 40px 0; } footer a { color: #ccc; text-decoration: none; } footer a:hover { color: #fff; } @media (max-width: 768px) { .video-banner {  height: 200px; } } @media (max-width: 480px) { .video-banner {  height: 160px; } }</style>
+    </head>
+    <body>
+        <!-- Banner + Navigation -->
+        <div class="video-banner">
+            <video autoplay muted loop playsinline>
+                <source src="images/blossoms.mp4" type="video/mp4">
+            </video>
+            <nav class="bg-dark navbar navbar-expand-lg navbar-light navbar-overlay">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">FANTASY HAVEN</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon" style="color: #fff;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="product.html">Store</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="comingsoon.html">Coming Soon</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Category Tabs -->
+        <section class="bg-white category-tabs filter-tope-group">
+            <button class="how-active1" data-filter="*">All Products</button>
+            <button data-filter=".fantasy">Fantasy</button>
+            <button data-filter=".sci-fi">Sci Fi</button>
+            <button data-filter=".city">City of the Damned</button>
+            <button data-filter=".middle-earth">Middle Earth</button>
+            <button data-filter=".other">Other</button>
+        </section>
+        <!-- Product Grid -->
+        <section class="bg0 p-b-140 p-t-40">
+            <div class="container">
+                <div class="row product-grid">
+                    <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 product-item fantasy">
+                        <div class="block2">
+                            <div class="block2-pic hov-img0">
+                                <img src="images/product-01.jpg" alt="Fantasy Miniature">
+                                <a href="product-detail.html" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">View</a>
+                            </div>
+                            <div class="block2-txt flex-w flex-t p-t-14">
+                                <div class="block2-txt-child1 flex-col-l">
+                                    <a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">Fantasy Miniature</a>
+                                    <span class="stext-105 cl3">£24.99</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more products here, matching filter classes -->
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg3 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Categories</h4>
+                        <ul class="list-unstyled">
+                            <li class="p-b-10"><a href="#">Fantasy</a>
+                            </li>
+                            <li class="p-b-10"><a href="#">Sci Fi</a>
+                            </li>
+                            <li class="p-b-10"><a href="#">City of the Damned</a>
+                            </li>
+                            <li class="p-b-10"><a href="#">Middle Earth</a>
+                            </li>
+                            <li class="p-b-10"><a href="#">Other</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Help</h4>
+                        <ul class="list-unstyled">
+                            <li class="p-b-10"><a href="#">Payment</a>
+                            </li>
+                            <li class="p-b-10"><a href="#">Shipping</a>
+                            </li>
+                            <li class="p-b-10"><a href="faq.html">FAQs</a>
+                            </li>
+                            <li class="p-b-10"><a href="#">Quality</a>
+                            </li>
+                            <li class="p-b-10"><a href="#">Returns</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 p-b-50">
+                        <h4 class="stext-301 cl0 p-b-30">Newsletter</h4>
+                        <form class="d-flex flex-column align-items-center">
+                            <div class="wrap-input1 w-full p-b-4" style="max-width: 300px; width: 100%;">
+                                <input class="input1 bg-none plh1 stext-107 cl7 text-center" type="text" name="email" placeholder="email@example.com">
+                                <div class="focus-input1 trans-04"></div>
+                            </div>
+                            <div class="p-t-18">
+                                <button class="btn btn-light btn-store"><b>Subscribe</b>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="p-t-40">
+                    <p class="stext-107 cl6 txt-center">© 2025 Fantasy Haven. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Scripts -->
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+        <script src="vendor/bootstrap/js/popper.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Vanilla JS Category Filter -->
+        <script>
+    const buttons = document.querySelectorAll('.filter-tope-group button');
+    const items = document.querySelectorAll('.product-item');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        buttons.forEach(btn => btn.classList.remove('how-active1'));
+        button.classList.add('how-active1');
+
+        items.forEach(item => {
+          if (filter === '*' || item.classList.contains(filter.replace('.', ''))) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+    </body>
+</html>
